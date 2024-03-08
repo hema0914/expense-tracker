@@ -1,0 +1,107 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffeeff; /* Baby pink background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #d74791; /* Pink text color */
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fade-in 1s ease-in-out;
+    font-style: italic;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  label {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #d74791; /* Pink text color */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    flex-basis: calc(100% - 120px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-style: italic;
+  }
+  
+  button[type="submit"] {
+    flex-basis: 100px;
+    padding: 15px; /* Increased padding for a more prominent button */
+    background-color: #d74791; /* Pink button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c43c81; /* Darker pink button color on hover */
+  }
+  
+  #expenseList {
+    width: 80%;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  #expenseList li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #expenseList li:hover {
+    background-color: #f5f5f5;
+  }
